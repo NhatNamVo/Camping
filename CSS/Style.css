@@ -1,0 +1,242 @@
+/* GLOBAL */
+*{
+    /* xóa mặc định của trình duyệt */
+    margin: 0;
+    padding: 0;
+}
+.clear{
+    clear: both;
+}
+body{
+    background-color: #FAF4F2;
+}
+/* HEADER */
+.header{
+    background-color: #F8E1DB;
+    padding: 10px 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header ul{
+    /* B1: xóa kiểu danh sách */
+    list-style: none;
+}
+.header a{
+    /* B2: xóa dấu gạch dưới của thẻ a */
+    text-decoration: none;
+    color: black;
+}
+
+.header li{
+    /* Đổi thẻ li từ block sang inline, để các thẻ nằm trên cùng 1 hàng */
+    display: inline;
+    /* margin: 0 15px; */
+    margin-right: 30px;
+    /* padding: 10px;
+    border: 3px solid gold; */
+    font-size: 18px;
+}
+.header .active a{
+    color: #E76F51;
+}
+/* carousel */
+.carousel{
+    background-image: url('../img/BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    border-radius: 0 0 150px 150px;
+    position: relative;
+}
+.caroseul__item{
+    float: left;
+    width: 25%;
+    /* margin: 0 15px; */
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.caroseul__item:hover {
+    margin-top: -20px;
+    cursor: pointer;
+}
+.carouseul__text{
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+.carouseul__text img{
+    height: 82px;
+}
+.caroseul__content{
+    position: absolute;
+    bottom: -85px;
+    left: 0;
+}
+/* activities */
+.activies{
+    padding: 100px 0 30px;
+    text-align: center;
+}
+.activities__title{
+    padding: 20px 0;
+    padding: 10px 0;
+    font-size: 25px;
+    color: slategrey;
+}
+.activities__item{
+    float: left;
+    width: 25%;
+
+    padding: 15px;
+    box-sizing: border-box;
+}
+.activities__text{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+}
+.activities__text img{
+    width: 100%;
+    border-radius: 10px;
+}
+.activities__img{
+    position: relative;
+}
+.activities__img a{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    width: 40px;
+    height: 40px;
+    /* căn giữa icon */
+    /* căn theo chiều ngang */
+    /* text-align: center; */
+    /* căng theo chiều dọc */
+    /* nếu chữ, icon chỉ có 1 dòng  thì line-height bằng chiều height sẽ giúp căn giữa theo chiều dọc */
+    line-height: 40px;
+    background-color: rgba(247, 247, 247, 0.7);
+    border-radius: 10px;
+    /* làm mờ thẻ và nội dung của thẻ  */
+    opacity: 0.5;
+}
+.activities__img i{
+    color: #e76f51;
+    font-size: 14px;
+}
+.activities__descript h3{
+    padding: 10px 0;
+}
+.activities__descript p{
+    padding: 10px 0;
+}
+.activities__descript button{
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+}
+.activities__button button{
+    padding: 5px;
+    width: 20%;
+    background-color: #F8E1DB;
+    border-radius: 20px;
+    border: 1px solid #e76f51;
+    font-family: -webkit-pictograph;
+    font-size: 18px;
+    color: #e76f51;
+}
+/* contact */
+.contact{
+    clear: both;
+    background-color: #F8E1DB;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.contact__img{
+    background: url(../img/mask.png) -360px 0;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+}
+.contact__img img{
+    padding-left: 80px;
+}
+.contact__content{
+    width: 50%;
+    padding: 80px 0;
+}
+.contact_text p{
+    padding: 10px 0;
+    font-size: 20px;
+}
+.contact__para{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+}
+.contact__app{
+    width: 50%;
+}
+.contact__app img{
+    padding: 10px 0;
+}
+.contact__follow{
+    width: 50%;
+}
+.contact__follow i{
+    margin: 10px 20px 0 0;
+    font-size: 30px;
+    color: #e76f51;
+}
+/* footer */
+.footer{
+    clear: both;
+    background-color: #F8E1DB;
+    margin: 100px 0 0;
+    border-radius: 50px 50px 0 0;
+    padding-bottom: 30px;
+}
+.footer__text{
+    width: 100%;
+    padding: 50px 50px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+.footer__sologan{
+    width: 40%;
+}
+.footer__sologan p{
+    padding: 15px 0;
+}
+.footer__Contact{
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+.footer__item{
+    margin: 0 30px;
+    width: 50%;
+    box-sizing: border-box;
+}
+.footer__item ul{
+    list-style: none;
+    padding: 15px 0;
+}
+.footer__item ul li{
+    padding-bottom: 20px;
+}
+.footer__item a:link,a:visited,a:active{
+    text-decoration: none;
+    color: black;
+}
+.footer__item a:hover{
+    color: #E76F51;
+}
+.footer__bar{
+    text-align: center;
+}
